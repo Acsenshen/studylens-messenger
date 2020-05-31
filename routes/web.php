@@ -22,7 +22,7 @@ Route::post('/idInfo', 'MessagesController@idFetchData');
 /**
  * Send message route
  */
-Route::post('/sendMessage', 'MessagesController@send')->name('send.message')->middleware('throttle:6,0.1');
+Route::post('/sendMessage', 'MessagesController@send')->name('send.message')->middleware('throttle:3,0.03');
 
 /**
  * Fetch messages 
